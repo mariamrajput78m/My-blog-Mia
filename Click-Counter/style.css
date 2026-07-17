@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #3f3d52;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 8vw;
+  flex-wrap: wrap;
+}
+
+/* ---------- left side: brand + tagline ---------- */
+
+.hero-content {
+  max-width: 520px;
+  flex: 1 1 400px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  background-color: #3ec98c;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo svg line {
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.logo.small {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+}
+
+.logo.small svg line {
+  stroke-width: 5;
+}
+
+.wordmark {
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  color: #c7c5d6;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+
+/* ---------- right side: phone mockup ---------- */
+
+.phone {
+  width: 340px;
+  border-radius: 40px;
+  background-color: #2c2a3d;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+  overflow: hidden;
+  border: 8px solid #1a1926;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.phone-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 22px;
+  background: #1a1926;
+  border-radius: 0 0 16px 16px;
+  z-index: 2;
+}
+
+.statusbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 4px;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+  font-size: 0.75rem;
+  color: #a9a7bb;
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.pager-arrow {
+  color: #3ec98c;
+  font-weight: 700;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #3ec98c;
+  opacity: 0.5;
+}
+
+.dot.active {
+  opacity: 1;
+  background-color: #ffffff;
+}
+
+.screen {
+  position: relative;
+  padding: 40px 20px 50px;
+  text-align: center;
+}
+
+.gear {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #6f6d85;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.counter-label {
+  color: #ffffff;
+  font-size: 0.95rem;
+  margin: 0 0 8px;
+}
+
+.counter-value {
+  color: #3ec98c;
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+}
+
+.controls {
+  display: flex;
+}
+
+.btn {
+  flex: 1;
+  padding: 26px 0;
+  background: none;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: #a9a7bb;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn.minus {
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+.btn:active {
+  color: #ffffff;
+}
+
+.btn.plus:active {
+  filter: brightness(0.85);
+}
+
+.btn.minus:active {
+  filter: brightness(0.85);
+}
+
+.btn.reset:active {
+  filter: brightness(0.85);
+}
+
+.btn.reset {
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-right: none;
+  padding: 16px 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.message {
+  min-height: 18px;
+  margin: 8px 20px 16px;
+  color: #e05a5a;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+    padding: 40px 6vw;
+  }
+  .brand {
+    justify-content: center;
+  }
+  .wordmark {
+    font-size: 1.9rem;
+  }
+  .tagline {
+    font-size: 1.15rem;
+  }
+}
