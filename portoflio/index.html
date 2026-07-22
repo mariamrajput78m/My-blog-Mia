@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Playball&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #f7e2e9;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 0 80px;
+            box-sizing: border-box;
+
+            background: #F48FB1;
+
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 45px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #222;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: .3s;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            font-size: 1rem;
+        }
+
+
+
+        .left {
+            font-size: 1.5rem;
+
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 150px auto 60px;
+            padding: 0 40px;
+            gap: 40px;
+        }
+
+        .leftsection {
+            width: 50%;
+            font-size: clamp(1.4rem, 2.6vw, 2.2rem);
+            line-height: 1.4;
+        }
+
+        .rightsection {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rightsection img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 12px;
+            margin: 0;
+            display: block;
+        }
+
+        .purple {
+            color: #e886a7;
+        }
+
+        #element {
+            color: #e886a7;
+
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+            overflow: visible;
+        }
+
+        h1,
+        .left,
+        .leftsection {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .vertical-des,
+        .text-grey {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #e886a7;
+            height: 1.3px;
+            margin: 40px 84px;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-grey {
+            color: #e886a7;
+        }
+
+        .secondsection .box {
+            width: 80vw;
+            border-top: 1.3px solid #e886a7;
+            margin: 56px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .secondsection .vertical {
+            width: 2.3px;
+            height: 50px;
+            background-color: #e886a7;
+            margin-top: -2px;
+            left: 9px;
+        }
+
+        .image-top {
+            width: 204px;
+            position: relative;
+            top: 27px;
+            left: -112px;
+        }
+
+        .image-top1 {
+            width: 204px;
+            position: relative;
+            top: 15px;
+            left: -112px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 21px;
+            left: -63px;
+            width: 156px;
+            font-size: 17px;
+        }
+
+        .vertical-title1 {
+            position: relative;
+            top: 4px;
+            left: -63px;
+            width: 156px;
+            font-size: 17px;
+        }
+
+        .vertical-des {
+            width: 248px;
+            position: relative;
+            color: rgb(209, 102, 138);
+            top: 30px;
+            left: -75px;
+            font-size: 14px;
+        }
+
+        .vertical-des1 {
+            width: 248px;
+            position: relative;
+            color: rgb(209, 102, 138);
+            top: 14px;
+            left: -75px;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Mariam's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, I'm <span class="purple">Mariam</span>
+
+                <div>and I'm a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="png_best.jpg" alt="developer pic">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">What I have done so far!</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="mewo.png" alt="meow">
+                    <div class="vertical-title">
+                        HTML Delevoper (2024-2025)
+                    </div>
+                    <div class="vertical-des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Numq repellendus quibusdam sapiente reiciendis deserunt
+                        cum dolor at, mollitia quidem.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top1" src="png2.png" alt="meow">
+                    <div class="vertical-title1">
+                        CSS Developer (2025-2026)
+                    </div>
+                    <div class="vertical-des1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Numq repellendus quibusdam sapiente reiciendis deserunt
+                        cum dolor at, mollitia quidem.
+                    </div>
+                </div>
+
+
+                <div class="vertical">
+                    <img class="image-top" src="mewo.png" alt="meow">
+                    <div class="vertical-title">
+                        CSS Developer (2025-2026)
+                    </div>
+                    <div class="vertical-des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Numq repellendus quibusdam sapiente reiciendis deserunt
+                        cum dolor at, mollitia quidem.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="mewo.png" alt="meow">
+                    <div class="vertical-title">
+                        CSS Developer (2025-2026)
+                    </div>
+                    <div class="vertical-des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Numq repellendus quibusdam sapiente reiciendis deserunt
+                        cum dolor at, mollitia quidem.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="mewo.png" alt="meow">
+                    <div class="vertical-title">
+                        CSS Developer (2025-2026)
+                    </div>
+                    <div class="vertical-des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Numq repellendus quibusdam sapiente reiciendis deserunt
+                        cum dolor at, mollitia quidem.
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Content Creator'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
